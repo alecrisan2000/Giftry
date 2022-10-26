@@ -17,6 +17,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity  {
     Button b1,b2;
     EditText ed1,ed2;
+    //eiieir
 
     TextView tx1;
     int counter = 3;
