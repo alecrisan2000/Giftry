@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class Register extends Activity{
     Button b1,b2;
     EditText ed1,ed2;
-
+    //hi
     TextView tx1;
 
 }
