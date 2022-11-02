@@ -19,5 +19,18 @@ public class Register extends Activity{
     EditText ed1,ed2;
     //hiuhuhutgerr
     TextView tx1;
-
+    @Override
+    protected void Register(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        b1.setOnClickListener(new View.OnClickListener() {
+        @Override
+        protected void Register(Bundle savedInstanceState){
+            b2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    finish();
+                }
+            });
+        }
+    }
 }
