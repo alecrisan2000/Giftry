@@ -22,8 +22,7 @@ public class Register extends Activity{
     @Override
     protected void Register(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        b1.setOnClickListener(new View.OnClickListener() {
-        @Override
+        b1.setOnClickListener(new View.OnClickListener() )
         protected void Register(Bundle savedInstanceState){
             b2.setOnClickListener(new View.OnClickListener() {
                 @Override
