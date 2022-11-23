@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
 
-</selector>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style android:name="AppTheme" android:parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item android:name="colorPrimary">@color/colorPrimary</item>
+        <item android:name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item android:name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style android:name="AppTheme.NoActionBar">
+        <item android:name="windowActionBar">false</item>
+        <item android:name="windowNoTitle">true</item>
+    </style>
+
+</resources>

@@ -18,7 +18,7 @@
         android:padding="5dp"
         android:text="Welcome to Geeks for Geeks \n Register Form"
         android:textAlignment="center"
-        android:textColor="@color/purple_700"
+        android:textColor="#9C27B0"
         android:textSize="18sp" />
 
     <!--edit text for user name-->
