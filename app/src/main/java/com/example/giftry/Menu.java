@@ -3,6 +3,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.app.Activity;
+import android.view.MenuItem;
 
 public class Menu extends Activity {
     @Override
@@ -17,5 +18,17 @@ public class Menu extends Activity {
         super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.about:
+                startActivity(new Intent(this, About.class));
+                return true;
+            case R.id.help:
+                startActivity(new Intent(this, Help.class));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
