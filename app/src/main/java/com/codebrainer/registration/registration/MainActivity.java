@@ -58,7 +58,7 @@
 //}
 package com.codebrainer.registration.registration;
 
-import android.support.v7.app.AppCompatActivity;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -66,6 +66,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.giftry.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -75,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
     EditText email;
     Button register;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
