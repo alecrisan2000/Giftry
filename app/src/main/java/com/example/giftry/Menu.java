@@ -4,12 +4,38 @@ import android.app.Activity;
 import android.view.Menu;
 import android.app.Activity;
 import android.view.MenuItem;
+import android.view.View;
 
 public class Menu extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        binding = ActivityHomeBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
+
+        // set navigation bar color
+        setNavigationBarColor();
+
+        //check for new app update
+        checkUpdate();
+
+        // set refresh color schemes
+        setRefreshLayoutColor();
+
+        // when user do search and refresh
+        listeners();
+
+        // getting data using internet connection
+        getDataUsingNetwork();
+
+    }
+    private void setNavigationBarColor() {
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setNavigationBarColor(getResources().getColor(R.color.navBarColor));
+        }
     }
 
     @Override
